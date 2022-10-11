@@ -6,7 +6,7 @@ WINDOWS
 
 1. Download ZIP and extract to any folder
 
-2. Install python https://www.python.org/downloads/
+2. Install [Python](https://www.python.org/downloads/)
 
 3. In cmd cd to directory chosen in step 1   Ex. cd Documents\YouTubeToMP4
 
