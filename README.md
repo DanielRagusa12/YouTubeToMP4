@@ -11,7 +11,7 @@ WINDOWS
 3. In cmd cd to directory chosen in step 1   Ex. cd Documents\YouTubeToMP4
 
 4. In cmd type:   
-   ``pip install pytube
+   `pip install pytube`
 
 5. Run the script by typing:   python YouTubeToMP4.py
 
