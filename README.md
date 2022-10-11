@@ -18,9 +18,9 @@ WINDOWS
 
 LINUX
 
-1. >git clone https://github.com/DanielRagusa12/YouTubeToMP4
+1. `git clone https://github.com/DanielRagusa12/YouTubeToMP4`
 
-2. >pip install pytube
+2. `pip install pytube`
 
-3. >python YouTubeToMP4
+3. `python YouTubeToMP4`
 
