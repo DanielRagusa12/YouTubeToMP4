@@ -8,7 +8,7 @@ WINDOWS
 
 2. Install [Python](https://www.python.org/downloads/)
 
-3. `cd \YouTubeToMP4`
+3. `cd \YouTubeToMP4-master`
 
 4. `pip install pytube`
 
