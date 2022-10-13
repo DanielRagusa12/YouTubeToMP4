@@ -12,7 +12,9 @@ WINDOWS
 
 4. `pip install pytube`
 
-5. `python YouTubeToMP4.py`
+5. `pip install colorama`
+
+6. `python YouTubeToMP4.py`
 
 
 LINUX
