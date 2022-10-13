@@ -6,7 +6,6 @@ import colorama
 from colorama import Back, Fore, Style
 
 
-
 def download_complete(stream, file_path):
     print("\n")
     print(Fore.GREEN + "Downloaded to: " + file_path)
@@ -71,17 +70,15 @@ def get_vid(tube):
 
 
 # ----------START------------
-colorama.init(autoreset = True)
+colorama.init(autoreset=True)
 
 
 print(Fore.BLUE + "YOUTUBE TO MP4")
 
 
-
 print(
     "WARNING: You will be promted to sign into your YouTube acccount on 1st launch using OAuth"
 )
-
 
 
 try:
