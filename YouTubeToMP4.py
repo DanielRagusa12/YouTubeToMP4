@@ -1,15 +1,15 @@
-import pytube
 from pytube import YouTube
-from sys import argv
 import os
 from pytube.cli import on_progress
 import re
-import sys
+import colorama
+from colorama import Back, Fore, Style
+
 
 
 def download_complete(stream, file_path):
     print("\n")
-    print("Downloaded to: " + file_path)
+    print(Fore.GREEN + "Downloaded to: " + file_path)
     print("\n")
 
 
@@ -17,7 +17,7 @@ def get_dir():
 
     current_dir = os.getcwd()
 
-    print("1: Download to Project Directory: " + current_dir)
+    print("\n1: Download to Project Directory: " + current_dir)
     print("2: Custom Directory: ")
 
     option = str(input())
@@ -71,31 +71,17 @@ def get_vid(tube):
 
 
 # ----------START------------
+colorama.init(autoreset = True)
 
 
-print(
-    "-------------------------------------------------YOUTUBE---------------------------------------------------"
-)
-print(
-    "--------------------------------------------------VIDEO----------------------------------------------------"
-)
-print(
-    "------------------------------------------------DOWNLOADER-------------------------------------------------"
-)
-print(
-    "-----------------------------------------------------------------------------------------------------------"
-)
+print(Fore.BLUE + "YOUTUBE TO MP4")
+
+
+
 print(
     "WARNING: You will be promted to sign into your YouTube acccount on 1st launch using OAuth"
 )
 
-
-left_alignment = "Left Text"
-center_alignment = "Centered Text"
-right_alignment = "Right Text"
-  
-# printing out aligned text
-print(f"{left_alignment : <20}{center_alignment : ^15}{right_alignment : >20}")
 
 
 try:
@@ -110,13 +96,6 @@ try:
     tube.register_on_complete_callback(download_complete)
 
     print("Title: ", tube.title)
-
-    print(
-        "-------------------------------------------------OUTPUT---------------------------------------------------_"
-    )
-    print(
-        "-------------------------------------------------OPTIONS---------------------------------------------------"
-    )
 
     print("1. Video .MP4\n2. Audio .MP3")
 
